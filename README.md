@@ -116,7 +116,7 @@ createApp(App).mount("#app")
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  ... (styles and fonts)
+  <!-- ... (styles and fonts) -->
   <title>Laravel Project</title>
   @vite('resources/css/app.css')
 </head>
@@ -169,7 +169,7 @@ export default {
 import {createRouter, createWebHistory} from 'vue-router';
 // import views to be used in the web router
 import Home from './views/Home.vue'
-... (additional view imports)
+// ... (additional view imports)
 
 const routes = [
   {
@@ -190,7 +190,7 @@ const routes = [
       component: Dashboard,
       beforeEnter: validateAccessToken
   },
-  ...
+  // ...
 ]
 
 const router = createRouter({
@@ -229,9 +229,9 @@ createApp(App)
 > Replace the "web.php" file content with the below
 
 ```PHP
-// routes/web.php
 
 <?php
+// routes/web.php
 
 use Illuminate\Support\Facades\Route;
 
